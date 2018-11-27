@@ -1,0 +1,97 @@
+unit Finan.Frm.ContaReceber;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Fwk.Frm.Padrao.Cadastro, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.StdCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Finan.Dm.Cadastro, Vcl.Mask, Fwk.Frm.Padrao.Pesquisa;
+
+type
+  TFrmContaReceber = class(TFwkFrmPadraoCadastro)
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    Label7: TLabel;
+    DBEdit7: TDBEdit;
+    Label8: TLabel;
+    DBEdit8: TDBEdit;
+    Label9: TLabel;
+    DBEdit9: TDBEdit;
+    Label10: TLabel;
+    DBEdit10: TDBEdit;
+    Label11: TLabel;
+    DBEdit11: TDBEdit;
+    Button2: TButton;
+    Button3: TButton;
+    Label12: TLabel;
+    DBEdit12: TDBEdit;
+    Label13: TLabel;
+    DBEdit13: TDBEdit;
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmContaReceber: TFrmContaReceber;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmContaReceber.Button2Click(Sender: TObject);
+begin
+  inherited;
+with Pesquisar(DmCadastro.QryContasReceber) do
+  begin
+    if Active then
+    begin
+
+      if (DmCadastro.QryContasReceber.State in [dsInsert, dsEdit]) then
+        DmCadastro.QryContasReceber.Edit;
+      DmCadastro.QryContasReceber.Insert;
+
+      DmCadastro.QryContasReceberENT_ID.AsInteger := FieldByName('ENT_ID')
+        .AsInteger;
+      DmCadastro.QryContasPagarENT_NOME.AsString :=
+        FieldByName('ENT_NOME').AsString;
+
+      Close;
+    end;
+  end;
+end;
+
+procedure TFrmContaReceber.Button3Click(Sender: TObject);
+begin
+  inherited;
+ with Pesquisar(DmCadastro.QryCategoria) do
+  begin
+    if Active then
+    begin
+      if (DmCadastro.QryContasReceber.State in [dsInsert, dsEdit]) then
+        DmCadastro.QryContasReceber.Edit;
+      DmCadastro.QryContasReceber.Insert;
+
+      DmCadastro.QryContasReceberCAT_ID.AsInteger := FieldByName('CAT_ID')
+        .AsInteger;
+      DmCadastro.QryContasReceberCAT_NOME.AsString :=
+        FieldByName('CAT_NOME').AsString;
+
+      Close;
+    end;
+  end;
+end;
+end.

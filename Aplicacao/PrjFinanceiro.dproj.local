@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/11/08 19:41:56.000.613,=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 19:42:58.000.371,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\PrjFinanceiro\Aplicacao\Finan.Frm.Principal.pas</Transaction>
+    <Transaction>2018/11/08 19:42:58.000.371,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\PrjFinanceiro\Aplicacao\Finan.Frm.Principal.dfm</Transaction>
+    <Transaction>2018/11/08 19:43:08.000.550,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\PrjFinanceiro\Aplicacao\PrjFinanceiro.dproj</Transaction>
+    <Transaction>2018/11/08 19:50:18.000.881,=C:\Framework\Fwk.Dm.Padrao.Database.pas</Transaction>
+    <Transaction>2018/11/08 19:50:18.000.707,=C:\Framework\Fwk.Dm.Padrao.Dados.pas</Transaction>
+    <Transaction>2018/11/08 19:50:19.000.291,=C:\Framework\Fwk.Frm.Padrao.Cadastro.pas</Transaction>
+    <Transaction>2018/11/08 19:50:19.000.087,=C:\Framework\Fwk.Frm.Padrao.Base.pas</Transaction>
+    <Transaction>2018/11/08 19:50:19.000.470,=C:\Framework\Fwk.Frm.Padrao.Pesquisa.pas</Transaction>
+    <Transaction>2018/11/08 19:50:19.000.560,=C:\Framework\Fwk.Frm.Padrao.Principal.pas</Transaction>
+    <Transaction>2018/11/08 20:10:59.000.542,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 20:11:51.000.129,C:\PrjFinanceiro\Aplicacao\Finan.Dm.Conexao.pas=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 20:11:51.000.129,C:\PrjFinanceiro\Aplicacao\Finan.Dm.Conexao.dfm=C:\PrjFinanceiro\Aplicacao\Unit1.dfm</Transaction>
+    <Transaction>2018/11/08 20:20:32.000.813,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 20:22:05.000.198,C:\PrjFinanceiro\Aplicacao\Finan.Dm.Cadastro.dfm=C:\PrjFinanceiro\Aplicacao\Unit1.dfm</Transaction>
+    <Transaction>2018/11/08 20:22:05.000.198,C:\PrjFinanceiro\Aplicacao\Finan.Dm.Cadastro.pas=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 20:34:51.000.515,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 20:35:23.000.706,C:\PrjFinanceiro\Aplicacao\Finan.Frm.Entidade.dfm=C:\PrjFinanceiro\Aplicacao\Unit1.dfm</Transaction>
+    <Transaction>2018/11/08 20:35:23.000.706,C:\PrjFinanceiro\Aplicacao\Finan.Frm.Entidade.pas=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 21:41:40.000.160,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/08 21:45:08.000.341,C:\PrjFinanceiro\Aplicacao\Finan.Frm.Categoria.dfm=C:\PrjFinanceiro\Aplicacao\Unit1.dfm</Transaction>
+    <Transaction>2018/11/08 21:45:08.000.341,C:\PrjFinanceiro\Aplicacao\Finan.Frm.Categoria.pas=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/22 20:48:57.000.425,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/22 20:51:14.000.190,C:\PrjFinanceiro\Aplicacao\Finan.Frm.ContaPagar.dfm=C:\PrjFinanceiro\Aplicacao\Unit1.dfm</Transaction>
+    <Transaction>2018/11/22 20:51:14.000.190,C:\PrjFinanceiro\Aplicacao\Finan.Frm.ContaPagar.pas=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 22:11:19.000.868,=C:\PrjFinanceiro\Aplicacao\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 22:13:04.000.206,C:\PrjFinanceiro\Aplicacao\Unit1.dfm=C:\PrjFinanceiro\Aplicacao\Finan.Frm.ContaReceber.dfm</Transaction>
+    <Transaction>2018/11/26 22:13:04.000.206,C:\PrjFinanceiro\Aplicacao\Unit1.pas=C:\PrjFinanceiro\Aplicacao\Finan.Frm.ContaReceber.pas</Transaction>
+  </Transactions>
+</BorlandProject>

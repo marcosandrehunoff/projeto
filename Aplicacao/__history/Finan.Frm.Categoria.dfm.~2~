@@ -1,0 +1,27 @@
+inherited FrmCategoria: TFrmCategoria
+  Caption = 'Cadastro de Categoria'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PcDados: TPageControl
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    inherited TabPesquisa: TTabSheet
+      inherited GbPesquisa: TGroupBox
+        ExplicitLeft = 0
+        ExplicitTop = 0
+      end
+    end
+    inherited TabCadastro: TTabSheet
+      inherited GbEdicao: TGroupBox
+        inherited DBNavigator1: TDBNavigator
+          Hints.Strings = ()
+        end
+      end
+    end
+  end
+  inherited DsoRegistros: TDataSource
+    DataSet = DmCadastro.QryCategoria
+    Left = 580
+    Top = 112
+  end
+end

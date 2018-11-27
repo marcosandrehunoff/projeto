@@ -1,0 +1,2 @@
+inherited DmConexao: TDmConexao
+end

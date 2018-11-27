@@ -1,0 +1,68 @@
+unit Finan.Frm.ContaPagar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Fwk.Frm.Padrao.Cadastro, Data.DB,
+  Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.StdCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Finan.Dm.Cadastro, Vcl.Mask,
+  Fwk.Frm.Padrao.Pesquisa;
+
+type
+  TFrmContaPagar = class(TFwkFrmPadraoCadastro)
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    DBEdit3: TDBEdit;
+    Label3: TLabel;
+    DBEdit4: TDBEdit;
+    Label4: TLabel;
+    DBEdit5: TDBEdit;
+    DBEdit6: TDBEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    DBEdit7: TDBEdit;
+    Label7: TLabel;
+    DBEdit8: TDBEdit;
+    Label8: TLabel;
+    DBEdit9: TDBEdit;
+    Label9: TLabel;
+    Label11: TLabel;
+    DBEdit11: TDBEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmContaPagar: TFrmContaPagar;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmContaPagar.Button1Click(Sender: TObject);
+begin
+  inherited;
+  with Pesquisar(DmCadastro.QryCategoria) do
+  begin
+    if Active then
+    begin
+      if (DmCadastro.QryContasPagar.State in [dsInsert, dsEdit]) then
+        DmCadastro.QryContasPagar.Edit;
+
+       DmCadastro.QryContasPagarCAT_ID.AsInteger := FieldByName('CAT_ID').AsInteger;
+       DmCadastro.QryContasPagarCAT_DESCRICAO.AsString := FieldByName('CAT_DESCRICAO').AsString;
+
+      Close;
+    end;
+  end;
+end;
+
+end.

@@ -1,0 +1,25 @@
+unit Finan.Dm.Cadastro;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Fwk.Dm.Padrao.Dados;
+
+type
+  TFwkDmPadraoDados1 = class(TFwkDmPadraoDados)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FwkDmPadraoDados1: TFwkDmPadraoDados1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

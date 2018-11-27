@@ -1,0 +1,24 @@
+inherited FinanFrmContaReceber: TFinanFrmContaReceber
+  Caption = 'CADASTROS DE CONTAS A RECEBER'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PcDados: TPageControl
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    inherited TabCadastro: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 24
+      ExplicitWidth = 754
+      ExplicitHeight = 341
+      inherited GbEdicao: TGroupBox
+        inherited DBNavigator1: TDBNavigator
+          Hints.Strings = ()
+        end
+      end
+    end
+  end
+  inherited DsoRegistros: TDataSource
+    Left = 700
+    Top = 128
+  end
+end

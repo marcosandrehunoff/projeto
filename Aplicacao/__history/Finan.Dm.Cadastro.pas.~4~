@@ -1,0 +1,42 @@
+unit Finan.Dm.Cadastro;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Fwk.Dm.Padrao.Dados, Finan.Dm.Conexao, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async,
+  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TDmCadastro = class(TFwkDmPadraoDados)
+    QryEntidade: TFDQuery;
+    QryEntidadeENT_ID: TIntegerField;
+    QryEntidadeENT_CLIENTE: TSmallintField;
+    QryEntidadeENT_FORNECEDOR: TSmallintField;
+    QryEntidadeENT_TIPO_PESSOA: TStringField;
+    QryEntidadeENT_NOME: TStringField;
+    QryEntidadeENT_CPFCNPJ: TStringField;
+    QryEntidadeENT_ENDERECO: TStringField;
+    QryEntidadeENT_CEP: TStringField;
+    QryEntidadeENT_CIDADE: TStringField;
+    QryEntidadeENT_UF: TStringField;
+    QryCategoria: TFDQuery;
+    QryCategoriaCAT_ID: TIntegerField;
+    QryCategoriaCAT_DESCRICAO: TStringField;
+    QryCategoriaCAT_TIPO: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DmCadastro: TDmCadastro;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
